@@ -1,0 +1,274 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #e5652f;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #333;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  outline: none;
+  border: none;
+}
+
+.cruds {
+  /* width: 1170px; */
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width:575px) {
+  h1 {
+    font-size: 26px !important;
+  }
+}
+
+
+/* start project */
+/* Start Grid System */
+@media (min-width: 576px) {
+
+  /* small Devices => Landscape Phones */
+  .cruds {
+    max-width: 540px;
+  }
+}
+
+@media (max-width:575px) {
+  .container {
+    margin: 0 15px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  /* Medium Devices => Tablets */
+  .cruds {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  /* Desktops */
+  .cruds {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  /* Large Screens */
+  .cruds {
+    max-width: 1140px;
+  }
+}
+
+/* start head */
+.head {
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.head::after,
+.inputs::after,
+table::after {
+  content: "";
+  width: 150px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+  margin-top: 10px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  width: 70%;
+}
+
+.head h1 {
+  margin-bottom: 5px;
+  color: var(--main-color);
+}
+
+.head p {
+  margin: 0;
+}
+
+/* end head */
+/* start inputs section */
+.inputs {
+  margin-top: 50px;
+  position: relative;
+}
+
+input {
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 2px 5px;
+  background-color: #222;
+  margin-bottom: 5px;
+  flex-grow: 1;
+  min-width: 100px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.inputs>input,
+[type="submit"] {
+  width: 100%;
+}
+
+.price {
+  display: flex;
+  gap: 10px;
+}
+
+#title {
+  width: 100%;
+}
+
+.inputs button {
+  background-color: var(--main-color);
+  outline: none;
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 2px 5px;
+  cursor: pointer;
+  border-radius: 11px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -o-border-radius: 11px;
+}
+
+small {
+  flex-grow: 1;
+  background-color: var(--main-color);
+  margin-bottom: 5px;
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+
+small::before {
+  content: "total: ";
+}
+
+.inputs p {
+  text-align: center;
+  color: #ff3c3c;
+  display: none;
+}
+
+/* end inputs section */
+/* start outputs section */
+.outputs {
+  margin-top: 50px;
+}
+
+.outputs #search {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.outputs .btnSearch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.outputs .btnSearch button {
+  background-color: var(--main-color);
+  width: 35%;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 2px 5px;
+  cursor: pointer;
+  border-radius: 11px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -o-border-radius: 11px;
+}
+
+/* start table */
+table {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  overflow-x: scroll;
+  position: relative;
+}
+
+table thead td {
+  text-transform: uppercase;
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+td button {
+  background-color: var(--main-color);
+  outline: none;
+  border: none;
+  color: white;
+  padding: 2px 5px;
+  cursor: pointer;
+  border-radius: 11px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -o-border-radius: 11px;
+}
+
+/* end outputs section */
+/* start footer section */
+footer {
+  display: grid;
+  place-items: center;
+  margin: 30px 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+/* end footer section */
+
+/* end project */

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUDS</title>
+  <!-- css files -->
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/master.css" />
+</head>
+
+<body>
+  <!-- start project -->
+  <div class="cruds">
+    <!-- start header -->
+    <div class="head">
+      <h1>CRUDS</h1>
+      <P>project for manage data for any store</P>
+    </div>
+    <!-- end header -->
+    <!-- start inputs -->
+    <div class="inputs">
+      <input type="text" id="title" placeholder="title" />
+      <div class="price">
+        <input onkeyup="getTotal()" type="number" id="price" placeholder="price" />
+        <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes" />
+        <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads" />
+        <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount" />
+        <small id="total"></small>
+      </div>
+      <input type="number" id="count" placeholder="count" />
+      <input type="text" id="category" placeholder="category" />
+      <button>add</button>
+      <p>some fields are empty</p>
+    </div>
+    <!-- end inputs -->
+    <!-- start outputs -->
+    <div class="outputs">
+      <div class="searchBlock">
+        <input onkeyup="Search(this.value.toLowerCase())" type="text" id="search" placeholder="search by title" />
+        <div class="btnSearch">
+          <button id="searchTitle">Search By Title</button>
+          <button id="searchCategory">Search By Category</button>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <td>id</td>
+            <td>title</td>
+            <td>price</td>
+            <td>taxes</td>
+            <td>ads</td>
+            <td>discount</td>
+            <td>total</td>
+            <td>category</td>
+            <td>update</td>
+            <td>delete</td>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <!-- end outputs -->
+    <footer>
+      <h3>made with love by <span>hasan</span></h3>
+    </footer>
+  </div>
+  <!-- end project -->
+  <!-- js files -->
+  <script src="./js/all.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
